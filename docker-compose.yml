@@ -1,0 +1,32 @@
+version: '3'
+services:
+
+#PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${project_name}:latest
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: test
+    working_dir: /workspace/my-blockchain-app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./workspace/:/workspace/
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
+
+#Volumes
+volumes:
+  dbdata:
+    driver: local
