@@ -8,7 +8,7 @@ Aim of this project is to provide development environment, testing framework for
 * All NPM conflicts resolved ( just run npm install)
 
 
-### Prerequisite
+### Pre-Requisites
 Following applications must be installed
 ```
 1. Docker
