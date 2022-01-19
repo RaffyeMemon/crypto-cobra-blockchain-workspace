@@ -8,7 +8,7 @@ Aim of this project is to provide development environment, testing framework for
 * All NPM conflicts resolved ( just run npm install)
 
 
-### Pre-Requisites
+### Prerequisite
 Following applications must be installed
 ```
 1. Docker
@@ -23,9 +23,10 @@ $ git clone https://github.com/RaffyeMemon/crypto-cobra-blockchain-workspace.git
 ```
 $ docker-compose up -d
 ```
-### To access the bash
+### To access the bash and running initial configuration
 ```
 $ docker exec -it app /bin/bash
+$ npm install ( make sure you are in folder my-blockchain-app )
 ```
 ### License
 
