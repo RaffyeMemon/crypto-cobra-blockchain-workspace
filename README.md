@@ -1,5 +1,5 @@
 # crypto-cobra-blockchain-workspace
-Simple docker environment to get quickly get started with Solidity - React DAPP development.
+Simple docker environment to quickly get started with Solidity - React DAPP development.
 
 Aim of this project is to provide development environment, testing framework for solidity and react, aiming to make life as an Ethereum developer easier.
 

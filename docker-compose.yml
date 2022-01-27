@@ -13,6 +13,7 @@ services:
     environment:
       SERVICE_NAME: app
       SERVICE_TAGS: test
+      CHOKIDAR_USEPOLLING: "true"
     working_dir: /workspace/my-blockchain-app
     ports:
       - "3000:3000"
